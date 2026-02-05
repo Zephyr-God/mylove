@@ -94,14 +94,14 @@ const controls = new OrbitControls(camera, renderer.domElement);
 controls.enableDamping = true;
 controls.dampingFactor = 0.08;
 controls.enablePan = true;
-controls.enableZoom = false;
+controls.enableZoom = !isMobile ? false : true;
 controls.rotateSpeed = 0.6;
 controls.minDistance = 20;
 controls.maxDistance = 20000;
 if (isMobile) {
   controls.touches = {
     ONE: THREE.TOUCH.ROTATE,
-    TWO: THREE.TOUCH.PAN
+    TWO: THREE.TOUCH.DOLLY_PAN
   };
 }
 
