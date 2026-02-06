@@ -343,7 +343,7 @@ function renderTextToCanvas(ctx, canvas, text) {
   // Fit text to canvas width
   const maxWidth = canvas.width * 0.9;
   let fontSize = isMobile ? 104 : 118;
-  ctx.font = `${fontSize}px 'Times New Roman', serif`;
+  ctx.font = `${fontSize}px 'MYoung PRC Medium', serif`;
   while (ctx.measureText(text).width > maxWidth && fontSize > 32) {
     fontSize -= 2;
     ctx.font = `${fontSize}px 'Times New Roman', serif`;
@@ -352,7 +352,7 @@ function renderTextToCanvas(ctx, canvas, text) {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   ctx.textAlign = "center";
   ctx.textBaseline = "middle";
-  ctx.font = `${fontSize}px 'Times New Roman', serif`;
+  ctx.font = `${fontSize}px 'MYoung PRC Medium', serif`;
 
   // Warm glow (tight, not foggy)
   ctx.shadowColor = "rgba(255, 150, 205, 1)";
