@@ -141,8 +141,8 @@ scene.add(textGroup);
 // Fog for abyss depth (stronger to push distance and haze)
 scene.fog = new THREE.Fog(0x000000, 150, 14000);
 
-const TEXT_COUNT = isMobile ? 220 : 280;
-const HEART_COUNT = isMobile ? 36 : 48;
+const TEXT_COUNT = isMobile ? 180 : 280;
+const HEART_COUNT = isMobile ? 32 : 48;
 const X_RANGE = isMobile ? 900 : 1080;
 const Y_RANGE = isMobile ? 155 : 170;
 
